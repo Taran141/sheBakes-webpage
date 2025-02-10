@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Delights Bakery</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- <nav class="navbar">
+        <div class="brandName">
+          <img
+            src="/Project1/images/fixedlogo.jpg"
+            width="120"
+            height="80"
+            alt="Bakery Logo"
+          />
+          <h1>Sweet Delights Bakery</h1>
+        </div>
+
+        <div class="nav-buttons">
+          <button class="btn">Home</button>
+          <button class="btn">About</button>
+          <button class="btn">Services</button>
+          <button class="btn">Contact</button>
+        </div>
+      </nav> -->
+
+      <nav class="navbar">
+        <div class="brandName">
+          <img
+            src="/Project1/images/fixedlogo.jpg"
+            width="120"
+            height="80"
+            alt="Bakery Logo"
+          />
+          <div class="logo">
+            <h1>SheBakes</h1>
+            <p>And she bakes RIGHT</p>
+            </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">ABOUT US</a></li>
+          <li class="dropdown">
+            <a href="#">PRODUCTS</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">BROWNIES</a></li>
+              <li><a href="#">BREADS</a></li>
+              <li><a href="#">COMBOS</a></li>
+              <li><a href="#">DESSERTS & CUPCAKES</a></li>
+              <li><a href="#">SANDWICHES & SAVOURIES</a></li>
+              <li><a href="#">BISCUITS, COOKIES & CRACKERS</a></li>
+              <li><a href="#">CAKES</a></li>
+              <li><a href="#">PASTRIES</a></li>
+            </ul>
+          </li>
+          <li><a href="#">SPECIALITY CAKES</a></li>
+          <li><a href="#">FIND US</a></li>
+          <li><a href="#">CONTACT US</a></li>
+          <li class="search-btn"><a href="#">SEARCH 🔍</a></li>
+          <li class="order-btn"><a href="#">ORDER ONLINE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="slider-Container">
+        <div class="slider">
+          <div
+            class="slider-item"
+            style="background-image: url(/Project1/images/coffeeslider.webp)"
+          >
+            <div class="content">
+              <div class="name">Coffee</div>
+              <div class="description">
+                Savor the perfect cup of coffee, expertly brewed to complement
+                our sweet treats and enhance your café experience.
+              </div>
+              <button>see more</button>
+            </div>
+          </div>
+          <div
+            class="slider-item"
+            style="background-image: url(/Project1/images/cupcakeSlider.webp)"
+          >
+            <div class="content">
+              <div class="name">CupCakes</div>
+              <div class="description">
+                Delight in our beautifully decorated cupcakes, available in a
+                variety of flavors, each topped with luscious frosting.
+              </div>
+              <button>see more</button>
+            </div>
+          </div>
+          <div
+            class="slider-item"
+            style="background-image: url(/Project1/images/cakesslider.webp)"
+          >
+            <div class="content">
+              <div class="name">Cakes</div>
+              <div class="description">
+                From classic flavors to custom designs, our cakes are
+                handcrafted with love for every special occasion.
+              </div>
+              <button>see more</button>
+            </div>
+          </div>
+          <div
+            class="slider-item"
+            style="background-image: url(/Project1/images/pastryslider.webp)"
+          >
+            <div class="content">
+              <div class="name">Pastries</div>
+              <div class="description">
+                Treat yourself to our flaky, buttery pastries, filled with
+                delightful flavors that make every bite irresistible.
+              </div>
+              <button>see more</button>
+            </div>
+          </div>
+          <div
+            class="slider-item"
+            style="background-image: url(/Project1/images/Brownieslider.webp)"
+          >
+            <div class="content">
+              <div class="name">Brownies</div>
+              <div class="description">
+                Indulge in our rich, fudgy brownies, baked to perfection with
+                the finest chocolate for a melt-in-your-mouth experience.
+              </div>
+              <button>see more</button>
+            </div>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="prev" onclick="prevSlide()">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="next" onclick="nextSlide()">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <section class="about-section">
+        <h2 class="section-title">Food of The Gods, Freshly Baked!</h2>
+        <p class="about-description">
+          Since 2004, we've been serving our guests the best quality treats,
+          traditionally made and presented with care.
+        </p>
+
+        <div class="about-content">
+          <div class="about-text">
+            <div class="info-box">
+              <h3>AUTHENTIC RECIPES</h3>
+              <p>
+                Our products are based on traditional home-style recipes using
+                fresh ingredients.
+              </p>
+            </div>
+            <div class="info-box">
+              <h3>BAKED WITH LOVE</h3>
+              <p>
+                Our passion for baking is poured into every recipe, serving
+                smiles on a plate every day.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-image">
+            <img src="/project1/images/about.webp" alt="Bakery Illustration" />
+          </div>
+
+          <div class="about-text">
+            <div class="info-box">
+              <h3>COMMITTED TO QUALITY</h3>
+              <p>
+                From our ingredients to our kitchen operations & guest services,
+                we always prioritize quality.
+              </p>
+            </div>
+            <div class="info-box">
+              <h3>HONESTLY PRICED</h3>
+              <p>
+                We constantly strive to offer the best products at the right
+                prices.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="know-more">KNOW MORE</button>
+      </section>
+      <section class="promo-section">
+        <div class="promo-overlay">
+          <h2>LIMITED TIME OFFER!</h2>
+          <p class="promo-highlight">GET 25% OFF ON ALL PASTRIES</p>
+          <p class="promo-description">
+            Indulge in our freshly baked pastries, made with love and the finest
+            ingredients. Don't miss this chance to treat yourself to something
+            sweet!
+          </p>
+          <button class="promo-btn">ORDER NOW</button>
+        </div>
+      </section>
+      <section class="menu-section">
+        <h2>Our menu</h2>
+        <div class="menu-slider-container">
+          <button class="menu-prev-btn">&#8592;</button>
+          <div class="menu-slider-wrapper">
+            <div class="menu-slider">
+              <div class="menu-item">
+                <img
+                  src="/Project1/images/cheesecakemenu.jpg"
+                  alt="Cheesecake"
+                />
+                <p>CHEESECAKE</p>
+              </div>
+              <div class="menu-item">
+                <img src="/Project1/images/icecreammenu.jpg" alt="Ice Cream" />
+                <p>ICE CREAM</p>
+              </div>
+              <div class="menu-item">
+                <img src="/Project1/images/cookiesmenu.jpg" alt="Cookies" />
+                <p>COOKIES</p>
+              </div>
+              <div class="menu-item">
+                <img src="/Project1/images/cakesmenu.jpg" alt="Cakes" />
+                <p>CAKES</p>
+              </div>
+              <div class="menu-item">
+                <img src="/Project1/images/bars.jpg" alt="Bars" />
+                <p>BARS</p>
+              </div>
+              <div class="menu-item">
+                <img src="/Project1/images/muffinsmenu.jpg" alt="Muffins" />
+                <p>MUFFINS</p>
+              </div>
+              <div class="menu-item">
+                <img src="/Project1/images/lavamenu.jpg" alt="Lava cakes" />
+                <p>LAVA CAKES</p>
+              </div>
+              <div class="menu-item">
+                <img src="/Project1/images/browniesmenu.jpg" alt="Brownies" />
+                <p>BROWNIES</p>
+              </div>
+            </div>
+          </div>
+          <button class="menu-next-btn">&#8594;</button>
+        </div>
+        <button class="menu-search-btn">SEARCH OUR MENU</button>
+      </section>
+
+      <section class="cookbook-section">
+        <div class="cookbook-content">
+          <h2 class="cookbook-title">
+            SheBakes <br />
+            Cookbook is Here
+          </h2>
+          <p class="highlight-text">Order Your Copy Now!</p>
+          <p class="description">
+            Discover 100+ irresistible, easy-to-follow recipes <br />
+            crafted for those who love the art of baking.
+          </p>
+          <button class="cook-order-btn">ORDER NOW</button>
+        </div>
+        <div class="cookbook-image">
+          <img src="/Project1/images/cookbook.jpg" alt="She Bakes Cookbook" />
+        </div>
+      </section>
+      <section class="specials">
+        <h2>Our Specials</h2>
+        <div class="items">
+          <div class="item">
+            <img src="/Project1/images/cupcakes.png" />
+            <h2 class="card">Cupcakes <br /></h2>
+          </div>
+          <div class="item">
+            <img src="/Project1/images/macrons.png" />
+            <h2 class="card">Macarons</h2>
+          </div>
+          <div class="item">
+            <img src="/Project1/images/cookies.png" />
+            <h2 class="card">Cookies</h2>
+          </div>
+          <div class="item">
+            <img src="/Project1/images/cakes.png" />
+            <h2 class="card">Cakes</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-promise">
+        <h2>Our Promise</h2>
+        <div class="promise-container">
+          <div class="promise-item">
+            <img src="/Project1/images/cupcakeicon.webp" alt="Cupcake Icon" />
+            <h3>AUTHENTIC RECIPES</h3>
+            <p>
+              Our products are based on traditional home-style recipes, using
+              fresh ingredients.
+            </p>
+          </div>
+          <div class="promise-item">
+            <img src="/Project1/images/loveicon.webp" alt="Heart Icon" />
+            <h3>BAKED WITH LOVE</h3>
+            <p>
+              Our passion for baking is poured into every recipe, serving smiles
+              on a plate everyday.
+            </p>
+          </div>
+          <div class="promise-item">
+            <img src="/Project1/images/icon3.webp" alt="Pricing Icon" />
+            <h3>HONESTLY PRICED</h3>
+            <p>
+              We constantly strive to offer the best products at the right
+              prices.
+            </p>
+          </div>
+          <div class="promise-item">
+            <img src="/Project1/images/icon4.webp" alt="Quality Icon" />
+            <h3>COMMITTED TO QUALITY</h3>
+            <p>
+              From our ingredients to our kitchen operations & guest services,
+              we always prioritize quality.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="contact-section">
+        <div class="form-container">
+          <div class="form">
+            <h2>Get in Touch</h2>
+            <p>
+              We'd love to hear from you! Drop us a message and we'll get back
+              soon.
+            </p>
+            <form>
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <textarea placeholder="Message" required></textarea>
+              <button class="form-button" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+        <div class="form-image-container"></div>
+      </div>
+
+      <section class="review-section">
+        <h2>What Customers Are Saying</h2>
+        <div class="review-slider-container">
+          <div class="review-slider">
+            <div class="review-card">
+              <img src="/Project1/images/review1.webp" alt="Review 1" />
+              <p class="review-text">
+                "Amazing cakes! Loved the taste and freshness."
+              </p>
+              <span class="review-author">- Sarah Johnson</span>
+            </div>
+            <div class="review-card">
+              <img src="/Project1/images/review2.webp" alt="Review 2" />
+              <p class="review-text">
+                "Best bakery in town! Highly recommended."
+              </p>
+              <span class="review-author">- Mark Anderson</span>
+            </div>
+            <div class="review-card">
+              <img src="/Project1/images/review3.jpg" alt="Review 3" />
+              <p class="review-text">
+                "Absolutely loved the cupcakes! Will order again."
+              </p>
+              <span class="review-author">- Emily Davis</span>
+            </div>
+            <div class="review-card">
+              <img src="/Project1/images/review4.webp" alt="Review 4" />
+              <p class="review-text">
+                "Excellent service and delicious pastries!"
+              </p>
+              <span class="review-author">- Daniel Smith</span>
+            </div>
+            <div class="review-card">
+              <img src="/Project1/images/review5.webp" alt="Review 5" />
+              <p class="review-text">
+                "The best bakery experience I've ever had!"
+              </p>
+              <span class="review-author">- Olivia Brown</span>
+            </div>
+
+            <!-- Duplicate for infinite loop effect -->
+            <div class="review-card">
+              <img src="/Project1/images/review1.webp" alt="Review 1" />
+              <p class="review-text">
+                "Amazing cakes! Loved the taste and freshness."
+              </p>
+              <span class="review-author">- Sarah Johnson</span>
+            </div>
+            <div class="review-card">
+              <img src="/Project1/images/review2.webp" alt="Review 2" />
+              <p class="review-text">
+                "Best bakery in town! Highly recommended."
+              </p>
+              <span class="review-author">- Mark Anderson</span>
+            </div>
+            <div class="review-card">
+              <img src="/Project1/images/review3.jpg" alt="Review 3" />
+              <p class="review-text">
+                "Absolutely loved the cupcakes! Will order again."
+              </p>
+              <span class="review-author">- Emily Davis</span>
+            </div>
+            <div class="review-card">
+              <img src="/Project1/images/review4.webp" alt="Review 4" />
+              <p class="review-text">
+                "Excellent service and delicious pastries!"
+              </p>
+              <span class="review-author">- Daniel Smith</span>
+            </div>
+            <div class="review-card">
+              <img src="/Project1/images/review5.webp" alt="Review 5" />
+              <p class="review-text">
+                "The best bakery experience I've ever had!"
+              </p>
+              <span class="review-author">- Olivia Brown</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-col logo">
+        <img src="/Project1/images/fixedlogo.jpg" alt="Logo" width="180" />
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Our Products</a></li>
+          <li><a href="#">Specialty Cakes</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">CSR</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Nutritional Info</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="contact-info">
+          <p><i class="fa-solid fa-phone"></i> +91 8182-881881</p>
+          <p><i class="fa-solid fa-envelope"></i> contact@theobroma.in</p>
+        </div>
+        <div class="social-icons">
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Subscribe for updates and exclusive offers.</p>
+        <div class="newsletter">
+          <input type="email" placeholder="Enter your email" />
+          <button class="news">Sign Up</button>
+        </div>
+      </div>
+    </footer>
+    <script src="/Project1/index.js"></script>
+  </body>
+</html>
