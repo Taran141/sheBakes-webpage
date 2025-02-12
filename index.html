@@ -42,7 +42,7 @@
           <div class="logo">
             <h1>SheBakes</h1>
             <p>And she bakes RIGHT</p>
-            </div>
+          </div>
         </div>
         <ul class="nav-links">
           <li><a href="#">ABOUT US</a></li>
@@ -75,6 +75,7 @@
             class="slider-item"
             style="background-image: url(/Project1/images/coffeeslider.webp)"
           >
+            <div class="slider-overlay"></div>
             <div class="content">
               <div class="name">Coffee</div>
               <div class="description">
@@ -88,6 +89,7 @@
             class="slider-item"
             style="background-image: url(/Project1/images/cupcakeSlider.webp)"
           >
+            <div class="slider-overlay"></div>
             <div class="content">
               <div class="name">CupCakes</div>
               <div class="description">
@@ -101,6 +103,7 @@
             class="slider-item"
             style="background-image: url(/Project1/images/cakesslider.webp)"
           >
+            <div class="slider-overlay"></div>
             <div class="content">
               <div class="name">Cakes</div>
               <div class="description">
@@ -114,6 +117,7 @@
             class="slider-item"
             style="background-image: url(/Project1/images/pastryslider.webp)"
           >
+            <div class="slider-overlay"></div>
             <div class="content">
               <div class="name">Pastries</div>
               <div class="description">
@@ -127,6 +131,7 @@
             class="slider-item"
             style="background-image: url(/Project1/images/Brownieslider.webp)"
           >
+            <div class="slider-overlay"></div>
             <div class="content">
               <div class="name">Brownies</div>
               <div class="description">
@@ -158,6 +163,7 @@
           <div class="about-text">
             <div class="info-box">
               <h3>AUTHENTIC RECIPES</h3>
+              <br />
               <p>
                 Our products are based on traditional home-style recipes using
                 fresh ingredients.
@@ -165,6 +171,7 @@
             </div>
             <div class="info-box">
               <h3>BAKED WITH LOVE</h3>
+              <br />
               <p>
                 Our passion for baking is poured into every recipe, serving
                 smiles on a plate every day.
@@ -179,6 +186,7 @@
           <div class="about-text">
             <div class="info-box">
               <h3>COMMITTED TO QUALITY</h3>
+              <br />
               <p>
                 From our ingredients to our kitchen operations & guest services,
                 we always prioritize quality.
@@ -186,6 +194,7 @@
             </div>
             <div class="info-box">
               <h3>HONESTLY PRICED</h3>
+              <br />
               <p>
                 We constantly strive to offer the best products at the right
                 prices.
@@ -211,7 +220,30 @@
       <section class="menu-section">
         <h2>Our menu</h2>
         <div class="menu-slider-container">
-          <button class="menu-prev-btn">&#8592;</button>
+          <button class="menu-prev-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="16"
+              height="16"
+              x="0"
+              y="0"
+              viewBox="0 0 24 24"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              class=""
+            >
+              <g>
+                <path
+                  d="M10.6 12.71a1 1 0 0 1 0-1.42l4.59-4.58a1 1 0 0 0 0-1.42 1 1 0 0 0-1.41 0L9.19 9.88a3 3 0 0 0 0 4.24l4.59 4.59a1 1 0 0 0 .7.29 1 1 0 0 0 .71-.29 1 1 0 0 0 0-1.42Z"
+                  fill="#000000"
+                  opacity="1"
+                  data-original="#000000"
+                ></path>
+              </g>
+            </svg>
+          </button>
           <div class="menu-slider-wrapper">
             <div class="menu-slider">
               <div class="menu-item">
@@ -251,7 +283,30 @@
               </div>
             </div>
           </div>
-          <button class="menu-next-btn">&#8594;</button>
+          <button class="menu-next-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="16"
+              height="16"
+              x="0"
+              y="0"
+              viewBox="0 0 24 24"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              class=""
+            >
+              <g>
+                <path
+                  d="m15.4 9.88-4.59-4.59a1 1 0 0 0-1.41 0 1 1 0 0 0 0 1.42l4.6 4.58a1 1 0 0 1 0 1.42l-4.6 4.58a1 1 0 0 0 1.41 1.42l4.59-4.59a3 3 0 0 0 0-4.24Z"
+                  fill="#000000"
+                  opacity="1"
+                  data-original="#000000"
+                ></path>
+              </g>
+            </svg>
+          </button>
         </div>
         <button class="menu-search-btn">SEARCH OUR MENU</button>
       </section>
@@ -273,30 +328,62 @@
           <img src="/Project1/images/cookbook.jpg" alt="She Bakes Cookbook" />
         </div>
       </section>
-      <section class="specials">
-        <h2>Our Specials</h2>
-        <div class="items">
-          <div class="item">
-            <img src="/Project1/images/cupcakes.png" />
-            <h2 class="card">Cupcakes <br /></h2>
+      <section class="specials-section">
+        <h2 class="section-title">Our Specials</h2>
+        <div class="specials-container">
+          <!-- Cupcakes -->
+          <div class="special-card">
+            <img src="/Project1/images/cupcakes.png" alt="Cupcakes" />
+            <div class="special-text">
+              <h3>Cupcakes</h3>
+              <p>
+                Delight in our beautifully decorated cupcakes, made with love
+                and the finest ingredients.
+              </p>
+            </div>
           </div>
-          <div class="item">
-            <img src="/Project1/images/macrons.png" />
-            <h2 class="card">Macarons</h2>
+
+          <!-- Macarons -->
+          <div class="special-card">
+            <img src="/Project1/images/macrons.png" alt="Macarons" />
+            <div class="special-text">
+              <h3>Macarons</h3>
+              <p>
+                Enjoy a variety of colorful, delicate macarons with a crispy
+                shell and creamy filling.
+              </p>
+            </div>
           </div>
-          <div class="item">
-            <img src="/Project1/images/cookies.png" />
-            <h2 class="card">Cookies</h2>
+
+          <!-- Cookies -->
+          <div class="special-card">
+            <img src="/Project1/images/cookies.png" alt="Cookies" />
+            <div class="special-text">
+              <h3>Cookies</h3>
+              <p>
+                Freshly baked cookies with gooey chocolate chunks and a perfect
+                crunch.
+              </p>
+            </div>
           </div>
-          <div class="item">
-            <img src="/Project1/images/cakes.png" />
-            <h2 class="card">Cakes</h2>
+
+          <!-- Cakes -->
+          <div class="special-card">
+            <img src="/Project1/images/cakes.png" alt="Cakes" />
+            <div class="special-text">
+              <h3>Cakes</h3>
+              <p>
+                Indulge in our delicious cakes, perfect for every occasion and
+                celebration.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="our-promise">
         <h2>Our Promise</h2>
+        <br /><br />
         <div class="promise-container">
           <div class="promise-item">
             <img src="/Project1/images/cupcakeicon.webp" alt="Cupcake Icon" />
@@ -334,11 +421,12 @@
       </section>
 
       <div class="contact-section">
-        <div class="form-container">
-          <div class="form">
+        <div class="contact-container">
+          <!-- Form Section -->
+          <div class="form-container">
             <h2>Get in Touch</h2>
             <p>
-              We'd love to hear from you! Drop us a message and we'll get back
+              We'd love to hear from you! Drop us a message, and we'll get back
               soon.
             </p>
             <form>
@@ -348,8 +436,20 @@
               <button class="form-button" type="submit">Send Message</button>
             </form>
           </div>
+
+          <!-- Map Section -->
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27574.55931379142!2d75.82218622913076!3d30.242211588739345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910510deb4fd6dd%3A0x72fec26ae33512c8!2sSangrur%2C%20Punjab%20148001!5e0!3m2!1sen!2sin!4v1739340577048!5m2!1sen!2sin"
+              width="800"
+              height="600"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-        <div class="form-image-container"></div>
       </div>
 
       <section class="review-section">
