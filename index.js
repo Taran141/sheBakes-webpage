@@ -13,7 +13,7 @@ prev.addEventListener("click", function () {
 })
 
 
-//**  menu buttons   **//
+// //**  menu buttons   **//
 
 document.addEventListener("DOMContentLoaded", function () {
     const menuSlider = document.querySelector(".menu-slider");
