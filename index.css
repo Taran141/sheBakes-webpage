@@ -349,7 +349,7 @@ button{
 /** promotion **/
 
 .promo-section {
-    background: url('/Project1/images/background.jpg') center/cover no-repeat;
+    background: url('/images/background.jpg') center/cover no-repeat;
     height: 400px;
     display: flex;
     justify-content: center;
